@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Data Driven">
+
+    <listeners>
+        <listener class-name="utilities.reports.testngListener"></listener>
+    </listeners>
+
+    <test name="Test NG 3">
+        <packages>
+            <package name="demo"/>
+            <package name="testsuites"/>
+        </packages>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Data Driven" parallel="tests">
+
+    <listeners>
+        <listener class-name="utilities.reports.testngListener"/>
+    </listeners>
+
+    <test name="Parallel Test 1">
+        <classes>
+            <class name="testcases.LoginTest"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name =" Parallel Test 2">
+        <classes>
+            <class name="testsuites.DemoClass1"></class>
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->

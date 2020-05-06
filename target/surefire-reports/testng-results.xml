@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="6" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Data Driven" duration-ms="37" started-at="2020-05-01T23:39:11 ICT" finished-at="2020-05-01T23:39:11 ICT">
+    <groups>
+      <group name="Smoke">
+        <method signature="DemoClass.Demo()[pri:0, instance:demo.DemoClass@7ea9e1e2]" name="Demo" class="demo.DemoClass"/>
+        <method signature="DemoClass1.webLoginCarLoan()[pri:0, instance:testsuites.DemoClass1@24fcf36f]" name="webLoginCarLoan" class="testsuites.DemoClass1"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Login Test" duration-ms="37" started-at="2020-05-01T23:39:11 ICT" finished-at="2020-05-01T23:39:11 ICT">
+      <class name="demo.DemoClass">
+        <test-method status="PASS" signature="Demo()[pri:0, instance:demo.DemoClass@7ea9e1e2]" name="Demo" duration-ms="5" started-at="2020-05-01T23:39:11 ICT" finished-at="2020-05-01T23:39:11 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo -->
+      </class> <!-- demo.DemoClass -->
+      <class name="testsuites.DemoClass1">
+        <test-method status="PASS" signature="webLoginCarLoan()[pri:0, instance:testsuites.DemoClass1@24fcf36f]" name="webLoginCarLoan" duration-ms="5" started-at="2020-05-01T23:39:11 ICT" finished-at="2020-05-01T23:39:11 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webLoginCarLoan -->
+      </class> <!-- testsuites.DemoClass1 -->
+    </test> <!-- Login Test -->
+  </suite> <!-- Data Driven -->
+</testng-results>

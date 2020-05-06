@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Data Driven">
+
+    <listeners>
+        <listener class-name="utilities.reports.testngListener"></listener>
+    </listeners>
+    <test name="Loan feature">
+        <classes>
+            <class name="testsuites.DemoClass1" >
+                <methods>
+                    <exclude name="mobileLoginCarLoan"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Demo Test">
+        <classes>
+            <class name="demo.DemoClass" />
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->
