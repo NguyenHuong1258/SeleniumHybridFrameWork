@@ -8,12 +8,12 @@
           <include name="mobileLoginCarLoan"/>
         </methods>
       </class> <!-- testsuites.DemoClass1 -->
-      <class name="testcases.LoginTest">
+      <class name="com.testcases.LoginTest">
         <methods>
           <include name="tearDown"/>
           <include name="loginAsBankManager"/>
         </methods>
-      </class> <!-- testcases.LoginTest -->
+      </class> <!-- com.testcases.LoginTest -->
     </classes>
   </test> <!-- MyHyBridFW(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

@@ -1,4 +1,4 @@
-package utilities.propertyreader;
+package com.utilities.propertyreader;
 
 public class PropertyReaderManager {
     private static PropertyReaderManager instance;
