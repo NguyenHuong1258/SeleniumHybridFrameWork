@@ -28,7 +28,6 @@ public class BaseTest {
             driver = webDriverManager.getDriver();
             OR = PropertyReaderManager.getInstance().getObjectRepositoryReader().getProperties();
             driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(PropertyReaderManager.getInstance().getConfigPropertiesReader().getImplicitWaitTime(), TimeUnit.SECONDS);
         }
         return driver;
     }
