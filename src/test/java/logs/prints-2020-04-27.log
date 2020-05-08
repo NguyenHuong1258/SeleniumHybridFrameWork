@@ -1,8 +1,0 @@
-16:37:55.764 [main] FATAL testsuites.DemoClass1 - this is fatal
-16:38:05.038 [main] DEBUG testsuites.DemoClass1 - I'm debugging
-16:38:05.040 [main] INFO  testsuites.DemoClass1 - Object is present
-16:38:05.040 [main] ERROR testsuites.DemoClass1 - Object is not present
-16:38:05.041 [main] FATAL testsuites.DemoClass1 - this is fatal
-16:38:21.360 [main] DEBUG testsuites.DemoClass1 - I'm debugging
-16:38:21.363 [main] INFO  testsuites.DemoClass1 - Object is present
-16:38:21.363 [main] ERROR testsuites.DemoClass1 - Object is not present

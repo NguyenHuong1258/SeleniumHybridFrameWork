@@ -5,7 +5,7 @@
   <testcase name="demo1" time="0.001" classname="testsuites.DemoClass1"/>
   <testcase name="mobileLoginApp" time="0.0" classname="testsuites.DemoClass1"/>
   <testcase name="webLoginApp" time="0.001" classname="testsuites.DemoClass1"/>
-  <testcase name="loginAsManager" time="21.275" classname="testcases.LoginTest">
+  <testcase name="loginAsManager" time="21.275" classname="com.testcases.LoginTest">
     <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//button[@class=&amp;apos;btn btn-primary btn-lg&amp;apos; and text()=&amp;apos;Bank Manager Login&amp;apos;]&amp;quot;}
   (Session info: chrome=81.0.4044.129)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
@@ -15,7 +15,7 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\HLE05\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: 02c036ab98b1c6784f81516ab9275c6e
 *** Element info: {Using=xpath, value=//button[@class=&amp;apos;btn btn-primary btn-lg&amp;apos; and text()=&amp;apos;Bank Manager Login&amp;apos;]}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn btn-primary btn-lg' and text()='Bank Manager Login']"}
+        <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn btn-primary btn-lg' and text()='Bank Manager Login']"}
   (Session info: chrome=81.0.4044.129)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
@@ -34,7 +34,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at testcases.LoginTest.loginAsManager(LoginTest.java:31)
+at com.testcases.LoginTest.loginAsManager(LoginTest.java:31)
 at java.util.ArrayList.forEach(ArrayList.java:1257)
 at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)

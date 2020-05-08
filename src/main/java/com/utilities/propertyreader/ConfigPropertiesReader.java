@@ -1,7 +1,7 @@
-package utilities.propertyreader;
+package com.utilities.propertyreader;
 
-import utilities.webdrivers.DriverType;
-import utilities.webdrivers.EnvironmentType;
+import com.utilities.webdrivers.DriverType;
+import com.utilities.webdrivers.EnvironmentType;
 
 import java.io.*;
 import java.util.Properties;

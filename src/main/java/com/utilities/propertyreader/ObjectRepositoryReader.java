@@ -1,4 +1,4 @@
-package utilities.propertyreader;
+package com.utilities.propertyreader;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

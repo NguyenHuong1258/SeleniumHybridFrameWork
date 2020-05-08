@@ -1,8 +1,8 @@
-package utilities.webdrivers;
+package com.utilities.webdrivers;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import utilities.propertyreader.PropertyReaderManager;
+import com.utilities.propertyreader.PropertyReaderManager;
 
 public class WebDriverManager {
     private WebDriver driver;

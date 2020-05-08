@@ -1,4 +1,4 @@
-package utilities.webdrivers;
+package com.utilities.webdrivers;
 
 public enum DriverType {
     CHROME,
