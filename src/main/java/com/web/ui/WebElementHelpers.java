@@ -23,5 +23,4 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         LOGGER.info(String.format("Send keys: %s into text box", valueToType));
         editBox.sendKeys(valueToType);
     }
-
 }
