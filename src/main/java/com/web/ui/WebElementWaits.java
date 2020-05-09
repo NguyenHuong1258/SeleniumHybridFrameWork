@@ -59,4 +59,20 @@ public class WebElementWaits {
         }
     }
 
+    /**
+     * Waits for element to be selected within 30 sec
+     *
+     * @param webElement
+     */
+    protected  void waitForElementToBeSelected(WebElement webElement){
+        try {
+            LOGGER.info("Try to wait for element to be selected.");
+            wait.until(ExpectedConditions.elementToBeSelected(webElement));
+        }catch (org.openqa.selenium.TimeoutException e){
+            LOGGER.info("Element is not selected.");
+        }
+
+    }
+
+
 }
