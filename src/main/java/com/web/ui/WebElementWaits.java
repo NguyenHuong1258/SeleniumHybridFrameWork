@@ -65,7 +65,7 @@ public class WebElementWaits {
      * @param elementLocator
      * @param textInElement
      */
-    protected void witForTextToBePresentInElementLocated(final By elementLocator, String textInElement){
+    protected void waitForTextToBePresentInElementLocated(final By elementLocator, String textInElement){
         try{
             LOGGER.info("Try to Wait for text to be visible");
             wait.until(ExpectedConditions.textToBePresentInElementLocated(elementLocator, textInElement));
