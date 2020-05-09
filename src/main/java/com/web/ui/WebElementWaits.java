@@ -73,4 +73,18 @@ public class WebElementWaits {
             LOGGER.info("Text in Element is not visible");
         }
     }
+
+    /**
+     * Waits for text in an Element to be visible in 10s
+     * @param webElement
+     * @param textInElement
+     */
+    protected void waitForTextToBePresentInElement(final WebElement webElement, String textInElement){
+        try{
+            LOGGER.info("Try to wait for text in element to be visible");
+            wait.until(ExpectedConditions.textToBePresentInElement(webElement, textInElement));
+        }catch (TimeoutException e){
+            LOGGER.info("Text cannot be visible");
+        }
+    }
 }
