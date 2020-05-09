@@ -3,6 +3,7 @@ package com.web.ui;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -59,4 +60,17 @@ public class WebElementWaits {
         }
     }
 
+    /**
+     * Waits for text in Element to be visible within 10s
+     * @param elementLocator
+     * @param textInElement
+     */
+    protected void witForTextToBePresentInElementLocated(final By elementLocator, String textInElement){
+        try{
+            LOGGER.info("Try to Wait for text to be visible");
+            wait.until(ExpectedConditions.textToBePresentInElementLocated(elementLocator, textInElement));
+        }catch (TimeoutException e){
+            LOGGER.info("Text in Element is not visible");
+        }
+    }
 }
