@@ -87,4 +87,32 @@ public class WebElementWaits {
             LOGGER.info("Text cannot be visible");
         }
     }
+
+    /**
+     * Waits for text in an Element to be visible in 10s
+     * @param webElement
+     * @param texInElement
+     */
+    protected void waitForTextToBePresentInElementValue(final WebElement webElement, String texInElement){
+        try {
+            LOGGER.info("Try to wait for text in element to be visible");
+            wait.until(ExpectedConditions.textToBePresentInElementValue(webElement, texInElement));
+        }catch (TimeoutException e){
+            LOGGER.info("Text cannot be visible");
+        }
+    }
+
+    /**
+     * Waits for text in an Element to be visible in 10s
+     * @param elementLocator
+     * @param textInElement
+     */
+    protected void waitForTextToBePresentInElementValue(final By elementLocator, String textInElement){
+        try {
+            LOGGER.info("Try to wait for text in element to be visible");
+            wait.until(ExpectedConditions.textToBePresentInElementValue(elementLocator, textInElement));
+        }catch (TimeoutException e){
+            LOGGER.info("Text cannot be visible");
+        }
+    }
 }
