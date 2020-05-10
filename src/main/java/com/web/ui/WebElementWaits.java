@@ -10,6 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.sql.Time;
+
 public class WebElementWaits {
     final WebDriver driver;
     private static Logger LOGGER = LogManager.getLogger(WebElementWaits.class.getName());
@@ -113,6 +115,22 @@ public class WebElementWaits {
             wait.until(ExpectedConditions.textToBePresentInElementValue(elementLocator, textInElement));
         }catch (TimeoutException e){
             LOGGER.info("Text cannot be visible");
+        }
+    }
+
+    // VisibilityOfElementLocated Vs presenceOfElementLocated
+    // use presenceOfElementLocated when you don't care whether if element visible or not, you just need to know if it's on the page.
+    // use visibilityOfElementLocated when you need to find element which should be also visible.
+    /**
+     * Waits for check element in DOM in 10s
+     * @param elementLocator
+     */
+    protected void waitForPresenceOfElementLocated(final By elementLocator){
+        try{
+            LOGGER.info("Try to wait to check the element present in DOM of a page");
+            wait.until(ExpectedConditions.presenceOfElementLocated(elementLocator));
+        }catch (TimeoutException e){
+            LOGGER.info("The element does not present in DOM");
         }
     }
 }
