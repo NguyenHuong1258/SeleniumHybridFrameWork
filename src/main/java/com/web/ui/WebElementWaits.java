@@ -79,7 +79,7 @@ public class WebElementWaits {
      *
      * @param elementLocator
      */
-    protected  void waitForElementToBeSelected(final By elementLocator){
+    protected  void waitForElementToBeSelected(By elementLocator){
         try {
             LOGGER.info("Try to wait for element to be selected.");
             wait.until(ExpectedConditions.elementToBeSelected(elementLocator));
@@ -89,5 +89,76 @@ public class WebElementWaits {
 
     }
 
+    /**
+     * Waits for element to be Clickable.
+     *
+     * @param elementLocator
+     */
+    protected  void waitForElementToBeClickable(final By elementLocator){
+        try {
+            LOGGER.info("Try to wait for element to be clickable by elementLocator.");
+            wait.until(ExpectedConditions.elementToBeClickable(elementLocator));
+        }catch (org.openqa.selenium.TimeoutException e){
+            LOGGER.info("Element is not clickable.");
+        }
+
+    }
+
+    /**
+     * Waits for element to be Clickable.
+     *
+     * @param webElement
+     */
+    protected  void waitForElementToBeClickable(final WebElement webElement){
+        try {
+            LOGGER.info("Try to wait for element to be clickable by webElement");
+            wait.until(ExpectedConditions.elementToBeClickable(webElement));
+        }catch (org.openqa.selenium.TimeoutException e){
+            LOGGER.info("Element is not clickable.");
+        }
+
+    }
+
+    /**
+     * Waits for element selection State to be.
+     *
+     * @param elementLocator
+     * @param selected
+     */
+    protected  void waitForElementSelectionStateToBe(final By elementLocator, final boolean selected){
+        try {
+            LOGGER.info("Try to wait for element selection State to be.");
+            wait.until(ExpectedConditions.elementSelectionStateToBe(elementLocator, selected));
+        }catch (org.openqa.selenium.TimeoutException e){
+            LOGGER.info("Element is not selected.");
+        }
+    }
+
+    /**
+     * Waits for element selection State To be.
+     *
+     * @param webElement
+     * @param selected
+     */
+    protected  void waitForElementSelectionStateToBe(final WebElement webElement, final boolean selected){
+        try {
+            LOGGER.info("Try to wait for element selection State to be.");
+            wait.until(ExpectedConditions.elementSelectionStateToBe(webElement, selected));
+        }catch (org.openqa.selenium.TimeoutException e){
+            LOGGER.info("Element is not selected.");
+        }
+    }
+
+    /**
+     * Wait for Alert is Present.
+     */
+    protected void waitForAlertIsPresent(){
+        try {
+            LOGGER.info("Try to wait for Alert is present.");
+            wait.until(ExpectedConditions.alertIsPresent());
+        }catch (org.openqa.selenium.TimeoutException e){
+            LOGGER.info("Alert is not present.");
+        }
+    }
 
 }
