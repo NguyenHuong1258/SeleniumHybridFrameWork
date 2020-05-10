@@ -141,7 +141,7 @@ public class WebElementWaits {
             LOGGER.info("Try to wait to check the element present in DOM of a page");
             wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(elementLocator));
         }catch (TimeoutException e){
-            LOGGER.info("The element does not present in DOM");
+            LOGGER.info("The element does not present");
         }
     }
 }
