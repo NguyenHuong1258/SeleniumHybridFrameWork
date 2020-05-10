@@ -59,4 +59,35 @@ public class WebElementWaits {
         }
     }
 
+    /**
+     * Waits for element to be selected within 30 sec
+     *
+     * @param webElement
+     */
+    protected  void waitForElementToBeSelected(WebElement webElement){
+        try {
+            LOGGER.info("Try to wait for element to be selected.");
+            wait.until(ExpectedConditions.elementToBeSelected(webElement));
+        }catch (org.openqa.selenium.TimeoutException e){
+            LOGGER.info("Element is not selected.");
+        }
+
+    }
+
+    /**
+     * Waits for element to be selected within 30 sec
+     *
+     * @param elementLocator
+     */
+    protected  void waitForElementToBeSelected(final By elementLocator){
+        try {
+            LOGGER.info("Try to wait for element to be selected.");
+            wait.until(ExpectedConditions.elementToBeSelected(elementLocator));
+        }catch (org.openqa.selenium.TimeoutException e){
+            LOGGER.info("Element is not selected.");
+        }
+
+    }
+
+
 }
