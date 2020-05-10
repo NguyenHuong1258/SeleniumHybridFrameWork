@@ -121,6 +121,7 @@ public class WebElementWaits {
     // VisibilityOfElementLocated Vs presenceOfElementLocated
     // use presenceOfElementLocated when you don't care whether if element visible or not, you just need to know if it's on the page.
     // use visibilityOfElementLocated when you need to find element which should be also visible.
+    // Visibility means that the element is not only displayed but also has a height and width that is greater than 0
     /**
      * Waits for check element in DOM in 10s
      * @param elementLocator
@@ -129,6 +130,16 @@ public class WebElementWaits {
         try{
             LOGGER.info("Try to wait to check the element present in DOM of a page");
             wait.until(ExpectedConditions.presenceOfElementLocated(elementLocator));
+        }catch (TimeoutException e){
+            LOGGER.info("The element does not present in DOM");
+        }
+    }
+
+    // An expectation for checking that all elements present on the web page that match the locator.
+    protected void waitForPresenceOfAllElementsLocatedBy(final By elementLocator){
+        try {
+            LOGGER.info("Try to wait to check the element present in DOM of a page");
+            wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(elementLocator));
         }catch (TimeoutException e){
             LOGGER.info("The element does not present in DOM");
         }
