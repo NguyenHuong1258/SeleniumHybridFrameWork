@@ -16,6 +16,7 @@ public class WebElementWaits {
     private final static int MILISECOND_VALUE = 1000;
     final WebDriverWait wait;
 
+
     public WebElementWaits(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -54,6 +55,32 @@ public class WebElementWaits {
         try {
             LOGGER.info("Try to Wait for element to be visible");
             wait.until(ExpectedConditions.visibilityOfElementLocated(elementLocator));
+        } catch (org.openqa.selenium.TimeoutException e) {
+            LOGGER.info("Element is not visible");
+        }
+    }
+    protected void waitForTitleIsVisible(final String title) {
+        try {
+            LOGGER.info("Try to Wait for element to be visible");
+            wait.until(ExpectedConditions.titleIs(title));
+        } catch (org.openqa.selenium.TimeoutException e) {
+            LOGGER.info("Element is not visible");
+        }
+    }
+
+    protected void waitForTitleContainsVisible(final String title) {
+        try {
+            LOGGER.info("Try to Wait for element to be visible");
+            wait.until(ExpectedConditions.titleContains(title));
+        } catch (org.openqa.selenium.TimeoutException e) {
+            LOGGER.info("Element is not visible");
+        }
+    }
+
+    protected void waitForVisibilityOfVisible(final WebElement element) {
+        try {
+            LOGGER.info("Try to Wait for element to be visible");
+            wait.until(ExpectedConditions.visibilityOf(element));
         } catch (org.openqa.selenium.TimeoutException e) {
             LOGGER.info("Element is not visible");
         }
