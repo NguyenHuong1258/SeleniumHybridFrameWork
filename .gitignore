@@ -10,3 +10,4 @@ Screenshots/
 .classpath
 .project
 *.iml
+test-output/
