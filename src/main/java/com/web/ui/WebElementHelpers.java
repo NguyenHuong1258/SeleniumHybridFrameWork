@@ -27,11 +27,11 @@ public abstract class WebElementHelpers extends WebElementVerifications {
     public boolean isElementDisplayedOnPage(final WebElement element){
         waitForElementToBeVisible(element);
         if(element.isDisplayed()){
-            LOGGER.info(String.format("The element: %s is displayed", element));
+            LOGGER.info("The element is displayed");
             return true;
         }
         else {
-            LOGGER.info(String.format("The element: %s is not displayed", element));
+            LOGGER.info("The element is not displayed");
             return false;
         }
     }
