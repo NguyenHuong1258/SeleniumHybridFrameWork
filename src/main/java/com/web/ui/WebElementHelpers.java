@@ -28,6 +28,13 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         editBox.sendKeys(valueToType);
     }
 
+
+    public void submitButton(final WebElement submitButton){
+        waitForElementToBeClickable(submitButton);
+        LOGGER.info("The button is submitted");
+        submitButton.submit();
+    }
+
     public boolean isElementDisplayedOnPage(final WebElement element){
         waitForElementToBeVisible(element);
         if(element.isDisplayed()){
