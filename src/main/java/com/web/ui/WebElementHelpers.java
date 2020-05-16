@@ -25,6 +25,18 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         editBox.sendKeys(valueToType);
     }
 
+    //IsEnabled Command
+    public boolean IsEnabledElement(final WebElement element){
+        waitForElementToBeVisible(element);
+        if (element.isEnabled()){
+            LOGGER.info("The element is enabled.");
+            return true;
+        }
+        else {
+            LOGGER.info("The element is not enabled.");
+            return false;
+        }
+    }
 
     //GetTagName Command
     public String getTagName(final WebElement element){
