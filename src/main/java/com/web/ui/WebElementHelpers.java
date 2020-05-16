@@ -23,4 +23,16 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         LOGGER.info(String.format("Send keys: %s into text box", valueToType));
         editBox.sendKeys(valueToType);
     }
+
+    public boolean isElementDisplayedOnPage(final WebElement element){
+        waitForElementToBeVisible(element);
+        if(element.isDisplayed()){
+            LOGGER.info(String.format("The element: %s is displayed", element));
+            return true;
+        }
+        else {
+            LOGGER.info(String.format("The element: %s is not displayed", element));
+            return false;
+        }
+    }
 }
