@@ -28,6 +28,12 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         editBox.sendKeys(valueToType);
     }
 
+    public void getCssValueCommand(final WebElement getValue, final String returnValue) {
+        waitForElementToBeVisible(getValue);
+        LOGGER.info("Get CSS value");
+        getValue.getCssValue(returnValue);
+    }
+
     public void getAttributeCommand(final WebElement getAttribute, final String returnValue) {
         waitForElementToBeVisible(getAttribute);
         LOGGER.info("Get attribute of element.");
