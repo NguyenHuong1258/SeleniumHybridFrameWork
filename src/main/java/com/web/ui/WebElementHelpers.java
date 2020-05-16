@@ -28,6 +28,18 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         editBox.sendKeys(valueToType);
     }
 
+    public boolean isElementDisplayedOnPage(final WebElement element){
+        waitForElementToBeVisible(element);
+        if(element.isDisplayed()){
+            LOGGER.info("The element is displayed");
+            return true;
+        }
+        else {
+            LOGGER.info("The element is not displayed");
+            return false;
+        }
+    }
+
     public String getTextInElement(final WebElement element){
         waitForElementToBeVisible(element);
         LOGGER.info("Get text inner of Element");
