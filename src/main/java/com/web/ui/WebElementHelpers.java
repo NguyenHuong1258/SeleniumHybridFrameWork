@@ -1,6 +1,7 @@
 package com.web.ui;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -32,6 +33,33 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         clickbtn.click();
     }
 
+    //IsEnabled Command
+    public boolean IsEnabledElement(final WebElement element){
+        waitForElementToBeVisible(element);
+        if (element.isEnabled()){
+            LOGGER.info("The element is enabled.");
+            return true;
+        }
+        else {
+            LOGGER.info("The element is not enabled.");
+            return false;
+        }
+    }
 
+    //GetTagName Command
+    public String getTagName(final WebElement element){
+        waitForElementToBeVisible(element);
+        LOGGER.info("Tag name of the element: "+ element.getTagName());
+        return element.getTagName();
+    }
+
+    //getSize Command
+    public Dimension getSize(final WebElement element){
+        waitForElementToBeVisible(element);
+        Dimension elementSize = element.getSize();
+        LOGGER.info("Width of the element: " + elementSize.getWidth());
+        LOGGER.info("Height of the element: " + elementSize.getHeight());
+        return elementSize;
+    }
 
 }
