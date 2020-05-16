@@ -28,6 +28,12 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         editBox.sendKeys(valueToType);
     }
 
+    public void clearCommand(final WebElement clearCommand) {
+        waitForElementToBeVisible(clearCommand);
+        LOGGER.info("Clear command");
+        clearCommand.clear();
+    }
+
 
     public void submitButton(final WebElement submitButton){
         waitForElementToBeClickable(submitButton);
