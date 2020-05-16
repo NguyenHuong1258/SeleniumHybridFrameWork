@@ -28,6 +28,13 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         editBox.sendKeys(valueToType);
     }
 
+    public String getTextInElement(final WebElement element){
+        waitForElementToBeVisible(element);
+        LOGGER.info("Get text inner of Element");
+        String textInElement = element.getText();
+        return textInElement;
+    }
+
     public void IsSelectedCommand(final WebElement selectCommand) {
         waitForElementToBeVisible(selectCommand);
         LOGGER.info("Select command");
