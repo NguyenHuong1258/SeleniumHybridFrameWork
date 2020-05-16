@@ -25,6 +25,14 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         editBox.sendKeys(valueToType);
     }
 
+
+    //GetTagName Command
+    public String getTagName(final WebElement element){
+        waitForElementToBeVisible(element);
+        LOGGER.info("Tag name of the element: "+ element.getTagName());
+        return element.getTagName();
+    }
+
     //getSize Command
     public Dimension getSize(final WebElement element){
         waitForElementToBeVisible(element);
