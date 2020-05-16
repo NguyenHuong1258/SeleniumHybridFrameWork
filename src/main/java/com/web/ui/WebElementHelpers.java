@@ -1,5 +1,6 @@
 package com.web.ui;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,6 +24,13 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         editBox.clear();
         LOGGER.info(String.format("Send keys: %s into text box", valueToType));
         editBox.sendKeys(valueToType);
+    }
+
+    //Click Command by WebElement
+    public void clickButton(final WebElement clickbtn){
+        waitForElementToBeClickable(clickbtn);
+        LOGGER.info("Button is clicked.");
+        clickbtn.click();
     }
 
     //IsEnabled Command
