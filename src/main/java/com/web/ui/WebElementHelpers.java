@@ -28,6 +28,12 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         editBox.sendKeys(valueToType);
     }
 
+    public void getAttributeCommand(final WebElement getAttribute, final String returnValue) {
+        waitForElementToBeVisible(getAttribute);
+        LOGGER.info("Get attribute of element.");
+        getAttribute.getAttribute(returnValue);
+    }
+
     public void getLocationOfElement(final WebElement element){
         waitForElementToBeVisible(element);
         Point location = element.getLocation();
