@@ -23,4 +23,11 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         LOGGER.info(String.format("Send keys: %s into text box", valueToType));
         editBox.sendKeys(valueToType);
     }
+
+    public String getTextInElement(final WebElement element){
+        waitForElementToBeVisible(element);
+        LOGGER.info("Get text inner of Element");
+        String textInElement = element.getText();
+        return textInElement;
+    }
 }
