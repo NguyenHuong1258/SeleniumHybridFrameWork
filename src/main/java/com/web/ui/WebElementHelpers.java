@@ -1,5 +1,7 @@
 package com.web.ui;
 
+import org.openqa.selenium.Point;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
@@ -24,6 +26,12 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         editBox.clear();
         LOGGER.info(String.format("Send keys: %s into text box", valueToType));
         editBox.sendKeys(valueToType);
+    }
+
+    public void getLocationOfElement(final WebElement element){
+        waitForElementToBeVisible(element);
+        Point location = element.getLocation();
+        LOGGER.info("X cordinate: "+location.getX() +"Y cordinate: "+location.getY());
     }
 
     //Click Command by WebElement
