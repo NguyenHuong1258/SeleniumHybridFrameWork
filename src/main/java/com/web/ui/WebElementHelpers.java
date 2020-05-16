@@ -23,4 +23,17 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         LOGGER.info(String.format("Send keys: %s into text box", valueToType));
         editBox.sendKeys(valueToType);
     }
+
+    //IsEnabled Command
+    public boolean IsEnabledElement(final WebElement element){
+        waitForElementToBeVisible(element);
+        if (element.isEnabled()){
+            LOGGER.info("The element is enabled.");
+            return true;
+        }
+        else {
+            LOGGER.info("The element is not enabled.");
+            return false;
+        }
+    }
 }
