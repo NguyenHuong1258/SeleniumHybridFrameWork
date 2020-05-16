@@ -28,6 +28,12 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         editBox.sendKeys(valueToType);
     }
 
+    public void IsSelectedCommand(final WebElement selectCommand) {
+        waitForElementToBeVisible(selectCommand);
+        LOGGER.info("Select command");
+        selectCommand.isSelected();
+    }
+
     public void getCssValueCommand(final WebElement getValue, final String returnValue) {
         waitForElementToBeVisible(getValue);
         LOGGER.info("Get CSS value");
@@ -81,5 +87,5 @@ public abstract class WebElementHelpers extends WebElementVerifications {
         LOGGER.info("Height of the element: " + elementSize.getHeight());
         return elementSize;
     }
-
+  
 }
