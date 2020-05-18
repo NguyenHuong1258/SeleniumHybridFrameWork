@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HNG: Test letskodeittest" parallel="tests">
+
+    <listeners>
+        <listener class-name="com.utilities.reports.testngListener"/>
+    </listeners>
+
+<!--    <test name="Login">-->
+<!--        <classes>-->
+<!--            <class name="com.HNG.testcases.letskodeittest.LoginTest"/>-->
+<!--        </classes>-->
+<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+<!--    <test name="Logout">-->
+<!--        <classes>-->
+<!--            <class name="com.HNG.testcases.letskodeittest.LogOutTest"/>-->
+<!--        </classes>-->
+<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+<!--    <test name="Search Courses">-->
+<!--        <classes>-->
+<!--            <class name="com.HNG.testcases.letskodeittest.SearchCoursesTest"/>-->
+<!--        </classes>-->
+<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+<!--    <test name="Search Courses">-->
+<!--        <classes>-->
+<!--            <class name="com.HNG.testcases.letskodeittest.DetailCourseTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    -->
+    <test name="CheckOut">
+        <classes>
+            <class name="com.HNG.testcases.letskodeittest.CheckoutTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

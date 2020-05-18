@@ -11,3 +11,4 @@ Screenshots/
 .project
 *.iml
 test-output/
+.idea/*

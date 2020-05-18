@@ -32,14 +32,13 @@ public class BaseTest {
         return driver;
     }
 
-    @AfterSuite
-    public void tearDown() {
-        if(driver != null) {
-            driver.quit();
-            driver = null;
-        }
-    }
-
+//    @AfterSuite
+//    public void tearDown() {
+//        if(driver != null) {
+//            driver.quit();
+//            driver = null;
+//        }
+//    }
 
     public String getScreenshotPath(String result, WebDriver driver) throws IOException {
 

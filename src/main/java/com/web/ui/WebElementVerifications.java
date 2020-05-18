@@ -1,15 +1,16 @@
 package com.web.ui;
 
+import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-
-import java.util.logging.Logger;
+import org.apache.logging.log4j.Logger;
+//import java.util.logging.Logger;
 
 public class WebElementVerifications extends WebElementWaits {
-    private final static Logger LOGGER = Logger.getLogger(WebElementVerifications.class.getName());
+    private final static Logger  LOGGER = LogManager.getLogger(WebElementVerifications.class.getName());
 
     public WebElementVerifications(WebDriver driver) {
         super(driver);
