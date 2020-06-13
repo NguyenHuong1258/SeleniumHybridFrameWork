@@ -38,4 +38,6 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(myCourses, "My Courses");
         //"My Courses"
     }
+
+
 }

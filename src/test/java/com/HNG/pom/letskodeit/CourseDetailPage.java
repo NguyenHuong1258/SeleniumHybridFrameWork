@@ -31,6 +31,7 @@ public class CourseDetailPage extends AbstractBasePage {
 
     public void clickEnroll(){
         clickButton(enrollbtn);
+
     }
 
 

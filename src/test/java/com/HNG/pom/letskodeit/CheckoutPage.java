@@ -144,6 +144,8 @@ public class CheckoutPage extends AbstractBasePage {
     public void checkSavePayment(boolean value){
         if (value)
             clickButton(chkbx_savePayment);
+
+
     }
 
     public void confirmPurchase(){

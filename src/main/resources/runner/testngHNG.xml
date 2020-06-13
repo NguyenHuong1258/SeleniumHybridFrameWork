@@ -6,27 +6,27 @@
         <listener class-name="com.utilities.reports.testngListener"/>
     </listeners>
 
-<!--    <test name="Login">-->
-<!--        <classes>-->
-<!--            <class name="com.HNG.testcases.letskodeittest.LoginTest"/>-->
-<!--        </classes>-->
-<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
-<!--    <test name="Logout">-->
-<!--        <classes>-->
-<!--            <class name="com.HNG.testcases.letskodeittest.LogOutTest"/>-->
-<!--        </classes>-->
-<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
-<!--    <test name="Search Courses">-->
-<!--        <classes>-->
-<!--            <class name="com.HNG.testcases.letskodeittest.SearchCoursesTest"/>-->
-<!--        </classes>-->
-<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
-<!--    <test name="Search Courses">-->
-<!--        <classes>-->
-<!--            <class name="com.HNG.testcases.letskodeittest.DetailCourseTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    -->
+    <test name="Login">
+        <classes>
+            <class name="com.HNG.testcases.letskodeittest.LoginTest"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Logout">
+        <classes>
+            <class name="com.HNG.testcases.letskodeittest.LogOutTest"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Search Courses">
+        <classes>
+            <class name="com.HNG.testcases.letskodeittest.SearchCoursesTest"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Detail Courses">
+        <classes>
+            <class name="com.HNG.testcases.letskodeittest.DetailCourseTest"/>
+        </classes>
+    </test>
+
     <test name="CheckOut">
         <classes>
             <class name="com.HNG.testcases.letskodeittest.CheckoutTest"/>
