@@ -1,6 +1,6 @@
-"# About Selenium Hybrid Framework" 
+# About Selenium Hybrid Framework
 This framework is basically developed and designed to automate web applications (both UI and API)
-"# Work Flow" 
+# Work Flow 
 1. Create a branch
 2. Do your work
 3. Prepare feature/bug_fix branch (Make sure commit history is clean)
