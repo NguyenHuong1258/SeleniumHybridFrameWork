@@ -16,17 +16,16 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
-    private WebDriver driver;
-    public WebDriverManager webDriverManager;
+    public static WebDriver driver;
+    public static WebDriverManager webDriverManager;
     public Properties OR;
     private static Logger logger = LogManager.getLogger(BaseTest.class.getName());;
     private static final String screenShotsFolder = "Screenshots";
 
-    public WebDriver getDriver() {
+    public static WebDriver getDriver() {
         if (driver == null) {
             webDriverManager = new WebDriverManager();
             driver = webDriverManager.getDriver();
-            OR = PropertyReaderManager.getInstance().getObjectRepositoryReader().getProperties();
             driver.manage().window().maximize();
         }
         return driver;

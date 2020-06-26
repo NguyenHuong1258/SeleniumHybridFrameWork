@@ -5,16 +5,10 @@
     <listeners>
         <listener class-name="com.utilities.reports.testngListener"/>
     </listeners>
-
-    <test name="Parallel Test 1">
-        <classes>
-            <class name="com.testcases.LoginTest"/>
-        </classes>
-    </test> <!-- Test -->
     <test name =" Parallel Test 2">
-        <classes>
-            <class name="testsuites.DemoClass1"></class>
-        </classes>
+        <packages>
+            <package name="com.testcases.facebooktest"></package>
+        </packages>
     </test>
 
 </suite> <!-- Suite -->

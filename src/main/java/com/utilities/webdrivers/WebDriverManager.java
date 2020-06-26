@@ -40,6 +40,7 @@ public class WebDriverManager {
                 System.setProperty(CHROME_DRIVER_PROPERTY, PropertyReaderManager.getInstance().getConfigPropertiesReader()
                         .getChromeDriverPath());
                 driver = new ChromeDriver();
+                break;
             case FIREFOX:
                 //driver = new FirefoxDriver();
                 break;

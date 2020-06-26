@@ -28,4 +28,6 @@ public class WebElementVerifications extends WebElementWaits {
         LOGGER.info("Verify element to be visible");
         Assert.assertTrue(webElement.isDisplayed(), message);
     }
+
+
 }
