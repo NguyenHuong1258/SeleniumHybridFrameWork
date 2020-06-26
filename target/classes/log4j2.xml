@@ -13,10 +13,10 @@
         </Console>
     </Appenders>
     <Loggers>
-        <Logger name="com.HNG.testcases.letskodeittest.LogOutTest" level="error" additivity="false">
+        <Logger name="com.HNG.letskodeit.testSuite.LogOutTest" level="error" additivity="false">
             <AppenderRef ref="File"/>
         </Logger>
-        <Logger name="com.HNG.testcases.letskodeittest.LoginTest" level="error" additivity="false">
+        <Logger name="com.HNG.letskodeit.testSuite.LoginTest" level="error" additivity="false">
             <AppenderRef ref="File"/>
         </Logger>
         <Root level="trace">

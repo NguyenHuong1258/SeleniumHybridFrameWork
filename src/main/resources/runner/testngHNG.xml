@@ -8,28 +8,28 @@
 
     <test name="Login">
         <classes>
-            <class name="com.HNG.testcases.letskodeittest.LoginTest"/>
+            <class name="com.HNG.letskodeit.testSuite.LoginTest"/>
         </classes>
     </test> <!-- Test -->
     <test name="Logout">
         <classes>
-            <class name="com.HNG.testcases.letskodeittest.LogOutTest"/>
+            <class name="com.HNG.letskodeit.testSuite.LogOutTest"/>
         </classes>
     </test> <!-- Test -->
     <test name="Search Courses">
         <classes>
-            <class name="com.HNG.testcases.letskodeittest.SearchCoursesTest"/>
+            <class name="com.HNG.letskodeit.testSuite.SearchCoursesTest"/>
         </classes>
     </test> <!-- Test -->
     <test name="Detail Courses">
         <classes>
-            <class name="com.HNG.testcases.letskodeittest.DetailCourseTest"/>
+            <class name="com.HNG.letskodeit.testSuite.DetailCourseTest"/>
         </classes>
     </test>
 
     <test name="CheckOut">
         <classes>
-            <class name="com.HNG.testcases.letskodeittest.CheckoutTest"/>
+            <class name="com.HNG.letskodeit.testSuite.CheckoutTest"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

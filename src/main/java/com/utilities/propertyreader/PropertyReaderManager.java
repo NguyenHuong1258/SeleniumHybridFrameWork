@@ -4,6 +4,7 @@ public class PropertyReaderManager {
     private static PropertyReaderManager instance;
     private static ConfigPropertiesReader configPropertiesReader;
     private static ObjectRepositoryReader objectRepositoryReader;
+    private static BrowserStackReader browserStackReader;
 
     // private constructor in singleton design pattern
     private PropertyReaderManager() {}
@@ -12,7 +13,6 @@ public class PropertyReaderManager {
         if(instance == null) {
             instance = new PropertyReaderManager();
         }
-
         return instance;
     }
 
@@ -22,5 +22,9 @@ public class PropertyReaderManager {
 
     public ObjectRepositoryReader getObjectRepositoryReader() {
         return  (objectRepositoryReader == null) ? new ObjectRepositoryReader() : objectRepositoryReader;
+    }
+
+    public BrowserStackReader browserStackReader() {
+        return  (browserStackReader == null) ? new BrowserStackReader() : browserStackReader;
     }
 }
